@@ -1,3 +1,5 @@
+from pathlib import Path
+
 # Scrapy settings for bike_scraping project
 #
 # For simplicity, this file contains only settings considered important or
@@ -12,6 +14,7 @@ BOT_NAME = 'bike_scraping'
 SPIDER_MODULES = ['bike_scraping.spiders']
 NEWSPIDER_MODULE = 'bike_scraping.spiders'
 
+BASE_DIR = Path(__file__).resolve().parent
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'bike_scraping (+http://www.yourdomain.com)'
@@ -50,9 +53,12 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'bike_scraping.middlewares.BikeScrapingDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+   'bike_scraping.middlewares.BikeScrapingDownloaderMiddleware': 543,
+   # 'rotating_proxies.middlewares.RotatingProxyMiddleware': 610,
+   # 'rotating_proxies.middlewares.BanDetectionMiddleware': 620,
+
+}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
