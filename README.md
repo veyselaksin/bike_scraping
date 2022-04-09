@@ -1,6 +1,5 @@
 # Bike Scraping
 
-## Description
 ### About site
 This site is a bicycle wholesaler site. People can buy bikes, bike parts or accessory for themselves.
 Visit site: [erdoganlarbisiklet.com](https://www.erdoganlarbisiklet.com/)
@@ -27,4 +26,7 @@ Run project
 ```
 scrapy crawl erdoganlarbike -O output/crawl_output.csv
 ```
-
+See output after the scraping 🚡
+```
+cat output/crawl_output.csv
+```
