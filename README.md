@@ -4,7 +4,7 @@
 This site is a bicycle wholesaler site. People can buy bikes, bike parts or accessory for themselves.
 Visit site: [erdoganlarbisiklet.com](https://www.erdoganlarbisiklet.com/)
 
-**Note:** You should change your E-Mail address, enable drive and gsheet api on GCP (Google Cloud Platform).
+**Note:** You should change your E-Mail address, enable drive api and gsheet api on GCP (Google Cloud Platform).
 
 ### About project
 This project developed in Python3.
