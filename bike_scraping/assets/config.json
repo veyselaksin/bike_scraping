@@ -1,12 +1,12 @@
 {
     "gsheet":{
-        "email":"veyselaksn@gmail.com",
+        "email":"<mail_address>",
         "scopes":[
             "https://www.googleapis.com/auth/drive",
             "https://www.googleapis.com/auth/drive.metadata.readonly",
             "https://www.googleapis.com/auth/drive.file"
         ],
-        "folder_id":"1dfmYiLzW-NrUHUGq3hK9saO7tun33O1t"
+        "folder_id":"<folder_id>"
 
     }
 }
